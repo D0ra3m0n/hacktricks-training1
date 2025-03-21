@@ -23,5 +23,5 @@ jobs:
           role-to-assume: arn:aws:iam::460291787062:role/sts-lab-2-target
           role-session-name: OIDCSession
 
-      - run: aws sts get-caller-identity
+      - run: aws sts get-federation-token --name consoler
         shell: bash
